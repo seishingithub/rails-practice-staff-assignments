@@ -5,13 +5,16 @@
   <thead>
   <tr>
     <th>Name</th>
+    <th>Locations</th>
   </tr>
   </thead>
   <tbody>
   <% @people.each do |person| %>
     <tr>
       <td>
-        <%= person.title %> <%= person.first_name %> <%= person.last_name %>
+        <%= link_to person_path(person) do %>
+          <%= person.title %> <%= person.first_name %> <%= person.last_name %>
+        <% end %>
       </td>
     </tr>
   <% end %>
