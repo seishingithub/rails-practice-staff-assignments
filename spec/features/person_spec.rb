@@ -40,6 +40,3 @@ feature 'Managing People' do
     end
   end
 end
-
-#From the person show page Users should be abel to click an edit
-# link and see the edit form for a person
